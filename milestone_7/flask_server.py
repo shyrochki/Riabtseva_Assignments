@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 
-with open('database.json','r') as file:
+with open('database.json', 'r') as file:
     employee_data = json.load(file)
 
 @app.get('/birthdays')
